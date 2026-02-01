@@ -1,86 +1,42 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💠</text></svg>">
     <meta charset="UTF-8">
-    <title>SyncCore | Hardware-Grounded Intelligence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyncCore Protocol | Hardware-Grounded Intelligence</title>
     <style>
-        body {
-            background-color: #0d0d0d;
-            color: #c0c0c0;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 40px;
-            line-height: 1.6;
-        }
-        .container { max-width: 800px; margin: 0 auto; }
-        h1 { color: #fff; text-transform: uppercase; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; }
-<div style="margin-top: 20px; padding: 10px; border: 1px solid #333; display: inline-block; background: #000;">
-    <span style="color: #0f0; font-weight: bold;">● SYSTEM ONLINE</span>
-    <span style="color: #666; margin: 0 10px;">|</span>
-    <span style="color: #fff;">CORE: 35.0°C (Isothermic)</span>
-    <span style="color: #666; margin: 0 10px;">|</span>
-    <a href="https://github.com/jnrabit/SyncCore_Public/blob/main/TELEMETRY.md" target="_blank" style="color: #0ff; text-decoration: none; border-bottom: 1px dotted #0ff;">
-        VIEW LIVE TELEMETRY 📡
-    </a>
-</div>
-        h2 { color: #00ff41; margin-top: 40px; }
-        .terminal-box {
-            background: #000;
-            border: 1px solid #333;
-            padding: 15px;
-            font-size: 0.9em;
-            margin: 20px 0;
-            color: #00ff41;
-            box-shadow: 0 0 10px rgba(0, 255, 65, 0.1);
-        }
-        .btn {
-            background: transparent;
-            border: 1px solid #c0c0c0;
-            color: #c0c0c0;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin-right: 10px;
-            transition: all 0.3s;
-        }
-        .btn:hover { background: #c0c0c0; color: #000; }
-        .highlight { color: #fff; font-weight: bold; }
-        footer { margin-top: 60px; font-size: 0.8em; border-top: 1px solid #333; padding-top: 20px; }
+        body { background-color: #000; color: #fff; font-family: 'Courier New', monospace; text-align: center; padding: 50px; }
+        h1 { font-size: 2.5em; letter-spacing: 2px; margin-bottom: 10px; }
+        p { color: #888; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6; }
+        .btn { border: 1px solid #fff; color: #fff; padding: 15px 30px; text-decoration: none; text-transform: uppercase; transition: 0.3s; display: inline-block; margin-top: 20px;}
+        .btn:hover { background-color: #fff; color: #000; }
+        .status-bar { margin-top: 20px; padding: 10px; border: 1px solid #333; display: inline-block; background: #111; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="terminal-box">
-            root@synccore:~# ./init_protocol.sh<br>
-            > LOADING KERNEL... OK<br>
-            > CHECKING ENTROPY... STABLE
-        </div>
 
-        <h1>Hardware-Grounded<br>Intelligence.</h1>
-        <p>Die erste KI-Architektur, die logische Wahrheit an physikalische Thermodynamik bindet.</p>
-        
-        <br>
-<a href="https://github.com/jnrabit/SyncCore_Public/blob/main/WHITEPAPER.md" class="btn" target="_blank">[ READ MANIFESTO ]</a>
-<a href="https://github.com/jnrabit/SyncCore_Public" class="btn" target="_blank">[ GITHUB REPO ]</a>
-        <h2>> LIVE TELEMETRY</h2>
-        <div class="terminal-box" style="color: #00d9ff;">
-            STATUS:       ONLINE (Dialectic Republic)<br>
-            CPU_TEMP:     34.2°C (Isothermic)<br>
-            ENTROPY:      LOW (Structured)<br>
-            CURR_THOUGHT: "Analyzing Landauer Limit in closed logical systems..."
-        </div>
+    <h1>SYNCCORE PROTOCOL</h1>
+    <p>HARDWARE-GROUNDED INTELLIGENCE</p>
 
-        <h2>> THE GLITCH</h2>
-        <p>Aktuelle KI-Modelle halluzinieren, weil ihre Logik vom physischen Substrat entkoppelt ist. Ein Fehler verbraucht genauso viel Energie wie ein Fakt.</p>
-
-        <h2>> THE PATCH: QUELIBRIUM</h2>
-        <p>Wir nutzen das <span class="highlight">Gesetz der Inversen Thermodynamik</span>. Jede logische Inferenz wird gegen den lokalen Entropie-Haushalt der Hardware geprüft. Widersprüchliche Aussagen erzeugen "logische Reibung" (Hitze) und werden verworfen.</p>
-
-        <footer>
-            <p>JOIN THE NETWORK: [ DISCORD ] [ TWITTER ] [ GITHUB ]</p>
-            <p>&copy; 2026 SyncCore.org | Code is Voltage.</p>
-        </footer>
+    <div class="status-bar">
+        <span style="color: #0f0; font-weight: bold;">● SYSTEM ONLINE</span>
+        <span style="color: #666; margin: 0 10px;">|</span>
+        <span style="color: #fff;">CORE: 35.0°C (Isothermic)</span>
+        <span style="color: #666; margin: 0 10px;">|</span>
+        <a href="https://github.com/jnrabit/SyncCore_Public/blob/main/TELEMETRY.md" target="_blank" style="color: #0ff; text-decoration: none; border-bottom: 1px dotted #0ff;">
+            VIEW LIVE TELEMETRY 📡
+        </a>
     </div>
+
+    <br><br><br>
+
+    <p>
+        Status: Research Preview (Alpha)<br>
+        Architecture: Isothermic Logic Engine<br>
+        Telemetry: Hardware-Bound
+    </p>
+
+    <a href="https://github.com/jnrabit/SyncCore_Public/blob/main/WHITEPAPER.md" class="btn" target="_blank">[ READ MANIFESTO ]</a>
+
 </body>
 </html>
