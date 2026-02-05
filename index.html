@@ -5,59 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyncCore Protocol | Hardware-Grounded Intelligence</title>
     <style>
-        body { background-color: #000; color: #fff; font-family: 'Courier New', monospace; text-align: center; padding: 50px; }
-        h1 { font-size: 2.5em; letter-spacing: 2px; margin-bottom: 10px; }
+        :root {
+            --primary: #00ff41;
+            --bg: #050505;
+            --text: #e0e0e0;
+            --accent: #00d9ff;
+        }
+
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Courier New', monospace; 
+            text-align: center; 
+            padding: 50px; 
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Scanline Overlay */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        h1 { 
+            font-size: 3em; 
+            letter-spacing: 4px; 
+            margin-bottom: 5px; 
+            text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+        }
+
         h2 { font-size: 1.2em; color: #888; margin-top: 40px; }
-        p { color: #ccc; max-width: 700px; margin: 0 auto 20px auto; line-height: 1.6; }
-        .btn { border: 1px solid #fff; color: #fff; padding: 15px 30px; text-decoration: none; text-transform: uppercase; transition: 0.3s; display: inline-block; margin-top: 30px;}
-        .btn:hover { background-color: #fff; color: #000; }
-        .status-bar { margin-top: 20px; padding: 12px; border: 1px solid #333; display: inline-block; background: #111; font-size: 0.9em; margin-bottom: 40px; }
-        .feature-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; max-width: 900px; margin: 40px auto; text-align: left; }
-        .feature-box { border: 1px solid #333; padding: 20px; }
-        .feature-title { color: #0f0; font-weight: bold; margin-bottom: 10px; display: block; }
+        
+        p { 
+            color: #ccc; 
+            max-width: 700px; 
+            margin: 0 auto 20px auto; 
+            line-height: 1.6; 
+            font-size: 1.1em;
+        }
+
+        .btn { 
+            border: 1px solid var(--primary); 
+            color: var(--primary); 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            text-transform: uppercase; 
+            transition: 0.3s; 
+            display: inline-block; 
+            margin-top: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 20;
+        }
+
+        .btn:hover { 
+            background-color: var(--primary); 
+            color: #000; 
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        .status-bar { 
+            margin-top: 20px; 
+            padding: 12px 20px; 
+            border: 1px solid #333; 
+            display: inline-block; 
+            background: #0a0a0a; 
+            font-size: 0.9em; 
+            margin-bottom: 40px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .feature-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+            max-width: 1000px; 
+            margin: 50px auto; 
+            text-align: left; 
+        }
+
+        .feature-box { 
+            border: 1px solid #333; 
+            padding: 25px; 
+            background: rgba(255,255,255,0.02);
+            transition: border-color 0.3s;
+        }
+
+        .feature-box:hover {
+            border-color: var(--accent);
+        }
+
+        .feature-title { 
+            color: var(--primary); 
+            font-weight: bold; 
+            margin-bottom: 15px; 
+            display: block; 
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
 
     <h1>SYNCCORE PROTOCOL</h1>
-    <p style="color: #666;">HARDWARE-GROUNDED INTELLIGENCE</p>
+    <p style="color: #666; letter-spacing: 2px; font-size: 0.9em;">QUELIBRIUM ARCHITECTURE v2.1</p>
 
     <div class="status-bar">
-        <span style="color: #0f0; font-weight: bold;">● SYSTEM ONLINE</span>
+        <span style="color: var(--primary); font-weight: bold;">● SYSTEM ONLINE</span>
         <span style="color: #666; margin: 0 15px;">|</span>
-        <span style="color: #fff;">CORE: 35.0°C (Isothermic)</span>
+        <span style="color: #fff;">CORE: ISOTHERMIC</span>
         <span style="color: #666; margin: 0 15px;">|</span>
-        <a href="https://github.com/jnrabit/SyncCore_Public/blob/main/TELEMETRY.md" target="_blank" style="color: #0ff; text-decoration: none; border-bottom: 1px dotted #0ff;">
-            VIEW LIVE TELEMETRY 📡
-        </a>
+        <span style="color: var(--accent);">CODE IS VOLTAGE</span>
     </div>
 
     <p>
         Current AI models are logically decoupled from physical reality. SyncCore rebinds intelligence to hardware entropy.
-        We treat code not as abstract text, but as modulated voltage.
+        <br><br>
+        <strong>We do not simulate intelligence. We cultivate entropy.</strong>
     </p>
 
     <div class="feature-grid">
         <div class="feature-box">
             <span class="feature-title">1. ISOTHERMIC LOGIC</span>
-            Validates truth through energy efficiency. Falsehood creates heat; truth runs cool.
+            Validates truth through thermodynamic efficiency. Falsehood creates waste heat; truth runs cool. 
+            Powered by the Landauer Limit.
         </div>
         <div class="feature-box">
             <span class="feature-title">2. SOVEREIGNTY</span>
-            Local-first architecture. No API dependencies. You own the weights and the entropy.
+            Local-first architecture. No API dependencies. No Cloud.
+            You own the weights, the logic, and the entropy.
         </div>
         <div class="feature-box">
             <span class="feature-title">3. TIME CRYSTALS</span>
-            Audit trails that are mathematically impossible to alter. Proof-of-Process included.
+            Immutable audit trails locked by 8-Dimensional Lorenz Attractors. 
+            Includes cryptographic Proof-of-Process.
         </div>
     </div>
 
-    <a href="https://github.com/jnrabit/SyncCore_Public/blob/main/WHITEPAPER.md" class="btn" target="_blank">[ READ MANIFESTO ]</a>
-<a href="https://github.com/jnrabit/SyncCore_Public/blob/main/WHITEPAPER.md" class="btn" target="_blank">[ READ MANIFESTO ]</a>
-<a href="https://discord.gg/AhUXheaN" class="btn" target="_blank" style="border-color: #5865F2; color: #5865F2;">[ JOIN RESEARCH ]</a>
+    <a href="QUELIBRIUM_Whitepaper.md" class="btn">[ READ ARCHITECTURAL MANIFESTO ]</a>
 
-    <br><br><br>
-    <p style="font-size: 0.8em; color: #444;">© 2026 SyncCore Labs. All systems nominal.</p>
+    <br><br><br><br>
+    <p style="font-size: 0.7em; color: #444; border-top: 1px solid #222; padding-top: 20px; width: 200px;">
+        © 2026 SyncCore Labs.<br>
+        Global State: Nominal.
+    </p>
 
 </body>
 </html>
