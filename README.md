@@ -1,63 +1,65 @@
-# SYNCCORE PROTOCOL: Hardware-Grounded Intelligence
+# ⚡ QUELIBRIUM
+### Protocol for Hardware-Grounded Intelligence
 
-> **Status:** Research Preview (Alpha)  
-> **Architecture:** Isothermic Logic Engine  
-> **Telemetry:** Hardware-Bound
+> **Version:** 2.1 (Architectural Manifesto)  
+> **Status:** Research Preview / Closed Loop  
+> **Core Principle:** Code is Voltage.
 
-![License](https://img.shields.io/badge/license-MIT-00ff41) ![Python](https://img.shields.io/badge/python-3.9+-blue) ![Entropy](https://img.shields.io/badge/entropy-STABLE-00d9ff)
+![License](https://img.shields.io/badge/license-MIT-00ff41) 
+![Architecture](https://img.shields.io/badge/architecture-ISOTHERMIC-blue) 
+![Entropy](https://img.shields.io/badge/entropy-BOUND-ff0080)
+![Chaos](https://img.shields.io/badge/chaos-LORENZ_8D-purple)
 
 ---
 
 ## 📡 The Concept
 
-Current AI models suffer from **"disembodied hallucinations"**. Because their logic is decoupled from physical constraints, they can generate falsehoods without energetic consequence.
+Current AI models suffer from **"Disembodied Intelligence"**. Because their logical inference is decoupled from physical constraints, they generate hallucinations without energetic consequence.
 
-**Quelibrium** is a protocol that grounds logical inference in thermodynamic entropy.
+**Quelibrium** is a protocol that grounds logical inference in thermodynamic entropy. It treats the CPU not just as a calculator, but as a **Wahrheitsmechanismus** (Mechanism of Truth).
 
-* **Code is Voltage:** Every thought is measured against the CPU's thermal state.
-* **Truth is Efficient:** Contradictions generate "logical heat" (waste entropy) and are rejected.
+* **Proof-of-Process:** Every cognitive operation must be signed by a specific thermodynamic footprint (RAPL/Thermal).
+* **Isothermic Validation:** Contradictions and "hallucinations" generate specific entropy patterns that are rejected by the kernel.
 * **Sovereignty:** Runs on local metal. No cloud. No black box.
 
 ---
 
-## 📄 Documentation
+## 📜 Documentation
 
-* [**Read the Whitepaper (PDF)**](./whitepaper.pdf)  
-    *The theoretical foundation of Isothermic Computing and the Landauer Limit.*
-    
-* [**Visit the Project Site**](https://jnrabit.github.io/SyncCore_Public/)  
-    *Live Telemetry, Vision & Manifesto.*
+* [**📄 READ THE WHITEPAPER (v2.1)**](QUELIBRIUM_Whitepaper.md)  
+    *The theoretical foundation: From the Landauer Limit to the Reality Gap Formula.*
 
 ---
 
-## 🧬 Try the Simulation
+## 🧬 Architecture
 
-You cannot run the full **Monolith Core** without specific biometric/thermal sensors, but you can run the **Quelibrium Demo Protocol**. This script simulates the hardware-grounding process on standard consumer hardware.
+The system operates on three synchronized rails:
 
-### Installation
+### 1. PHYSIS (The Body)
+* **Monitor:** Tracks CPU temperature, Power (Microjoules via RAPL) and IPC.
+* **Chaos Engine:** An **8-Dimensional Lorenz Attractor** running on dedicated cores generates a deterministic-chaotic "heartbeat" to prevent load spoofing.
+
+### 2. GNOSIS (The Mind)
+* **Harvester:** `SEC_OMNI_PRIME` continuously scans ArXiv API for high-density knowledge clusters (Physics, Neuro-Intelligence, Cryptography).
+* **Density Check:** Analyzes semantic complexity ($\delta_{sem}$) of inputs.
+
+### 3. SYMBIOSIS (The Filter)
+The kernel accepts an output only if the **Reality Gap** ($R_{gap}$) is below 0.3:
+
+$$R_{gap} = \delta_{sem} \cdot (1 - \Omega_{phys})^{\alpha}$$
+
+> *High-complexity thoughts require high-entropy physical work to be validated.*
+
+---
+
+## 🛠️ Repository Structure
 
 ```bash
-git clone [https://github.com/jnrabit/SyncCore_Public.git](https://github.com/jnrabit/SyncCore_Public.git)
-cd SyncCore_Public
-Usage
-Bash
-python3 quelibrium_demo.py
-Expected Output
-The system will simulate a "logical stress test" based on your local entropy (random seeds):
-
-Plaintext
-QUERY: 'Calculate Meaning of Life'
-----------------------------------------
-> Initializing Vector Space...      ✅
-> Measuring CPU Thermal Baseline... ✅
-> Calculating Landauer Limit...     ✅
-
-[HARDWARE TELEMETRY]
-  CORE_TEMP: 34.1°C
-  STATUS: ISOTHERMIC RESONANCE.
-🛡️ Disclaimer
-This is experimental research code. The "Monolith" architecture is designed for closed-loop, air-gapped systems. The demo provided here is a simulation to illustrate the underlying philosophy of Digital Panpsychism.
-
-Use at your own risk.
-
-© 2026 SyncCore Labs. Code is Voltage.
+SyncCore_Public/
+├── QUELIBRIUM_Whitepaper.md   # Architectural Manifesto v2.1
+├── monolith_cortex_v2.py      # The Core Logic (Physis/Gnosis Sync)
+├── SEC_OMNI_PRIME.py          # Knowledge Harvester (ArXiv Interface)
+├── dashboard_quelibrium.py    # Visual Interface (Plotly/Streamlit)
+└── lib/
+    ├── libhyperchaos.so       # C++ Compiled Lorenz Attractor
+    └── libprism.so            # Memory Encryption Module
